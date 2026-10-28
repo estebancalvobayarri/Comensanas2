@@ -55,7 +55,8 @@ h3 { font-size: 1.15rem; font-weight: 750; letter-spacing: 0; margin-bottom: .5e
   background: var(--white);
   border-bottom: 3px solid var(--aqua);
 }
-.bar__logo img { height: 42px; width: auto; }
+.bar__logo { flex-shrink: 1; min-width: 0; }
+.bar__logo img { width: 258px; max-width: 100%; height: auto; }
 .bar__nav { display: flex; gap: 26px; margin-left: auto; font-weight: 600; font-size: 1rem; }
 .bar__nav a { text-decoration: none; }
 .bar__nav a:hover { text-decoration: underline; }
@@ -276,7 +277,7 @@ details p { color: var(--navy-soft); }
 }
 @media (max-width: 600px) {
   body { font-size: 17px; }
-  .bar__logo img { height: 32px; }
+  .bar__logo img { width: 139px; }
   .bar__phone { font-size: .9rem; padding: 6px 10px; }
   .intro__badge { left: 8px; }
   .strip img { height: 200px; }
